@@ -1,11 +1,11 @@
 package person;
 
 /**
- * The Class person.PersonDescrition
+ * The Class person.PersonDescribe
  * @author wuguangsheng
  * @version 1.0 16/1/12
  */
-public class PersonDescrition
+public class PersonDescribe
 {
 	float hight,weight;
 	String head,ear,hand,foot,mouth;

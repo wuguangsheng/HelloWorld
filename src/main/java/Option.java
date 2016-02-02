@@ -2,8 +2,10 @@ import data.MultiplicationTable;
 import data.UtilDate;
 import person.HelloWorld;
 import person.PersonDate;
-import person.PersonDescrition;
+import person.PersonDescribe;
 import triangle.TriangleArea;
+
+import java.awt.*;
 
 /**
  * The java learning main run class
@@ -15,8 +17,8 @@ public class Option
 {
 	public static void main(String[]args)
 	{
-		PersonDescrition kathy;
-		kathy=new PersonDescrition();
+		PersonDescribe kathy;
+		kathy=new PersonDescribe();
 		kathy.speak("Hello World");
 
         UtilDate now = new UtilDate() ;
@@ -33,6 +35,7 @@ public class Option
 
         HelloWorld end = new HelloWorld();
         end.endShow("\n三角形面积计算");
+        show.toString();
 
         TriangleArea key = new TriangleArea();
         key.triangleArea();

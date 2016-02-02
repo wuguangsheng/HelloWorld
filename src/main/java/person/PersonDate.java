@@ -2,9 +2,9 @@ package person;
 
 public class PersonDate {
     public void Information (){
-        PersonDescrition zhubajie,suwukong;
-        zhubajie=new PersonDescrition();
-        suwukong=new PersonDescrition();
+        PersonDescribe zhubajie,suwukong;
+        zhubajie=new PersonDescribe();
+        suwukong=new PersonDescribe();
         zhubajie.hight=1.8f;
         zhubajie.weight=180f;
         zhubajie.hand="两只黑手";

@@ -10,13 +10,13 @@ public class TriangleArea {
     public static void triangleArea(){
         // Obtain data from the user.
         KeyboardInput in = new KeyboardInput();
-        System.out.print("Enter length of first side:");
+        System.out.print("Side1: ");
         double side1 = in.readDouble(3);
         System.out.print(side1);
-        System.out.print("Enter length of second side:");
+        System.out.print("Side2: ");
         double side2 = in.readDouble(4);
         System.out.print(side2);
-        System.out.print("Enter length of third side:");
+        System.out.print("Side3: ");
         double side3 = in.readDouble(5);
         System.out.print(side3+"\n");
         // Now test to see if the input describes an invalid
