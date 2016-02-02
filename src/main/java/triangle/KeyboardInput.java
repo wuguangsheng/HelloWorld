@@ -11,8 +11,8 @@ import data.UtilDate;
 
 public class KeyboardInput {
     Double readDouble(final int s){
-        UtilDate now = new UtilDate();
-        String a = now.getThree();
+        //UtilDate now = new UtilDate();
+        //String a = now.getThree();
         Double x = 2.34*s;
         return x;
     }
