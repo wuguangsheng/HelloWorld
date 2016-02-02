@@ -22,7 +22,7 @@ public class Option
 		kathy.speak("Hello World");
 
         UtilDate now = new UtilDate() ;
-        System.out.println("订单编码：\t" + now.getThree()+now.getOrderNum());
+        System.out.println("订单编码：\t" + now.getOrderNum() + now.getThree());
         System.out.println("下单时间：\t" + now.getDateFormatter());
         System.out.println("订单批号：\t" + now.getDate());
 

@@ -67,5 +67,10 @@ public class UtilDate {
 		return rad.nextInt(1000)+"";
 	}
 
+	public static Double getLength(){
+		Random rad=new Random();
+		return rad.nextDouble()*100;
+	}
+
 	
 }

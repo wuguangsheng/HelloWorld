@@ -1,5 +1,4 @@
 package triangle;
-import data.UtilDate;
 
 import java.lang.*;
 import data.UtilDate;
@@ -10,10 +9,8 @@ import data.UtilDate;
  */
 
 public class KeyboardInput {
-    Double readDouble(final int s){
-        //UtilDate now = new UtilDate();
-        //String a = now.getThree();
-        Double x = 2.34*s;
-        return x;
+    Double readDouble(){
+        UtilDate now = new UtilDate();
+        return now.getLength();
     }
 }
