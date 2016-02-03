@@ -34,7 +34,7 @@ public class Option
 
         HelloWorld end = new HelloWorld();
         end.endShow("\n三角形面积计算");
-        show.toString();
+        //show.toString();
 
         TriangleArea key = new TriangleArea();
         key.triangleArea();
