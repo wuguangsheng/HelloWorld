@@ -62,14 +62,17 @@ public class UtilDate {
 	 * 产生随机的三位数
 	 * @return
 	 */
+	public static int getNumber(final int x){
+		Random rad = new Random();
+		return rad.nextInt(x);
+	}
+
 	public static String getThree(){
-		Random rad=new Random();
-		return rad.nextInt(1000)+"";
+		return getNumber(1000)+"";
 	}
 
 	public static Double getLength(){
-		Random rad=new Random();
-		return rad.nextDouble()*100;
+		return getNumber(100)*2.34;
 	}
 
 	

@@ -26,9 +26,8 @@ public class Option
         System.out.println("下单时间：\t" + now.getDateFormatter());
         System.out.println("订单批号：\t" + now.getDate());
 
-        MultiplicationTable ob;
-        ob = new MultiplicationTable();
-        ob.anyNumber(5);
+        MultiplicationTable ob = new MultiplicationTable();
+        ob.input(now.getNumber(100));
 
         PersonDate show =new PersonDate();
         show.Information();

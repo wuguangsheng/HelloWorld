@@ -1,6 +1,5 @@
 package triangle;
 
-import java.lang.*;
 import data.UtilDate;
 /**
  * The class triangle.KeyboardInput for input data from compute keyboard

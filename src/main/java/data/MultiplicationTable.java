@@ -16,7 +16,7 @@ public class MultiplicationTable {
         }
 
     }
-    void input (final int x){
+    public void input (final int x){
         if ((x < 2) || (x > 12)){
             System.out.println("Cannot display that table");
         } else {
