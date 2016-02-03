@@ -61,6 +61,7 @@ public class UtilDate {
 	/**
 	 * 产生随机的三位数
 	 * @return
+	 * @author wuguangsheng modified in 2016/2/3
 	 */
 	public static int getNumber(final int x){
 		Random rad = new Random();
