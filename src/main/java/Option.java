@@ -1,11 +1,8 @@
 import data.MultiplicationTable;
 import data.UtilDate;
-import person.HelloWorld;
 import person.PersonDate;
 import person.PersonDescribe;
 import triangle.TriangleArea;
-
-import java.awt.*;
 
 /**
  * The java learning main run class
@@ -13,32 +10,39 @@ import java.awt.*;
  * @version 1.0 16/1/29
  *
  */
-public class Option
-{
-	public static void main(String[]args)
-	{
-		PersonDescribe kathy;
-		kathy=new PersonDescribe();
-		kathy.speak("Hello World");
+public class Option {
+   public static void main(String[]args){
+       /**
+        * Sade hello world!
+        */
+       PersonDescribe kathy=new PersonDescribe();
+       kathy.speak("Hello World");
 
-        UtilDate now = new UtilDate() ;
-        System.out.println("订单编码：\t" + now.getOrderNum() + now.getThree());
-        System.out.println("下单时间：\t" + now.getDateFormatter());
-        System.out.println("订单批号：\t" + now.getDate());
+       /**
+        * generated order
+        */
+       UtilDate now = new UtilDate();
+       kathy.speak("订单编码：\t" + now.getOrderNum() + now.getThree());
+       kathy.speak("下单时间：\t" + now.getDateFormatter());
+       kathy.speak("订单批号：\t" + now.getDate());
 
-        MultiplicationTable ob = new MultiplicationTable();
-        ob.input(now.getNumber(100));
+       /**
+        * mad multiplication table
+        */
+       MultiplicationTable ob = new MultiplicationTable();
+       ob.input(now.getNumber(100));
 
-        PersonDate show =new PersonDate();
-        show.Information();
+       /**
+        * person information
+        */
+       PersonDate show =new PersonDate();
+       show.Information();
 
-        HelloWorld end = new HelloWorld();
-        end.endShow("\n三角形面积计算");
-        //show.toString();
-
-        TriangleArea key = new TriangleArea();
-        key.triangleArea();
-
-	}
-
+       /**
+        * triangle area
+        */
+       kathy.speak("\n三角形面积计算");
+       TriangleArea key = new TriangleArea();
+       key.triangleArea();
+   }
 }
