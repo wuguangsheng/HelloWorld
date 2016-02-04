@@ -7,7 +7,7 @@ package triangle;
  * @version 1.0 16/1/27
  */
 public class TriangleArea {
-    public static void triangleArea(){
+    public void triangleArea(){
         // Obtain data from the user.
         KeyboardInput in = new KeyboardInput();
         System.out.print("Side1: ");

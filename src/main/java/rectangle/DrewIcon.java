@@ -1,4 +1,4 @@
-package data;
+package rectangle;
 
 import javafx.scene.control.ComboBox;
 

@@ -30,9 +30,9 @@ public class UtilDate {
     /**
      * 返回系统当前时间(精确到毫秒),作为一个唯一的订单编号
      * @return
-     *      以yyyyMMddHHmmss为格式的当前系统时间
+     * order number 以yyyyMMddHHmmss为格式的当前系统时间
      */
-	public  static String getOrderNum(){
+	public  String getOrderNum(){
 		Date date=new Date();
 		DateFormat df=new SimpleDateFormat(dtLong);
 		return df.format(date);
@@ -41,8 +41,9 @@ public class UtilDate {
 	/**
 	 * 获取系统当前日期(精确到毫秒)，格式：yyyy-MM-dd HH:mm:ss
 	 * @return
+	 * time format yyyy-MM-dd HH:mm:ss
 	 */
-	public  static String getDateFormatter(){
+	public  String getDateFormatter(){
 		Date date=new Date();
 		DateFormat df=new SimpleDateFormat(simple);
 		return df.format(date);
@@ -51,8 +52,9 @@ public class UtilDate {
 	/**
 	 * 获取系统当期年月日(精确到天)，格式：yyyyMMdd
 	 * @return
+	 * format yyyyMMdd
 	 */
-	public static String getDate(){
+	public String getDate(){
 		Date date=new Date();
 		DateFormat df=new SimpleDateFormat(dtShort);
 		return df.format(date);
@@ -61,18 +63,18 @@ public class UtilDate {
 	/**
 	 * 产生随机的三位数
 	 * @return
-	 * @author wuguangsheng modified in 2016/2/3
+	 * generated any number
 	 */
-	public static int getNumber(final int x){
+	public int getNumber(final int x){
 		Random rad = new Random();
 		return rad.nextInt(x);
 	}
 
-	public static String getThree(){
+	public String getThree(){
 		return getNumber(1000)+"";
 	}
 
-	public static Double getLength(){
+	public Double getLength(){
 		return getNumber(100)*2.34;
 	}
 

@@ -2,6 +2,7 @@ import data.MultiplicationTable;
 import data.UtilDate;
 import person.PersonDate;
 import person.PersonDescribe;
+import rectangle.DisplayRectangle;
 import triangle.TriangleArea;
 
 /**
@@ -44,5 +45,11 @@ public class Option {
        kathy.speak("\n三角形面积计算");
        TriangleArea key = new TriangleArea();
        key.triangleArea();
+
+       /**
+        * display rectangle
+        */
+       DisplayRectangle display = new DisplayRectangle();
+       display.displayRectangle(10,20);
    }
 }
