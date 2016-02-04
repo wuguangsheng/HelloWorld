@@ -10,6 +10,6 @@ import data.UtilDate;
 public class KeyboardInput {
     Double readDouble(){
         UtilDate now = new UtilDate();
-        return now.getLength();
+        return now.getNumber(10)*2.43;
     }
 }

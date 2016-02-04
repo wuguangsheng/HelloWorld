@@ -24,7 +24,7 @@ public class Option {
         * generated order
         */
        UtilDate now = new UtilDate();
-       kathy.speak("订单编码：\t" + now.getOrderNum() + now.getThree());
+       kathy.speak("订单编码：\t" + now.getOrderNum() + now.getNumber(1000));
        kathy.speak("下单时间：\t" + now.getDateFormatter());
        kathy.speak("订单批号：\t" + now.getDate());
 
@@ -32,7 +32,7 @@ public class Option {
         * mad multiplication table
         */
        MultiplicationTable ob = new MultiplicationTable();
-       ob.input(now.getNumber(100));
+       ob.input(now.getNumber(10));
 
        /**
         * person information

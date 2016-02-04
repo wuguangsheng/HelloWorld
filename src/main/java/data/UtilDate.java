@@ -61,7 +61,7 @@ public class UtilDate {
 	}
 	
 	/**
-	 * 产生随机的三位数
+	 * 产生随机数
 	 * @return
 	 * generated any number
 	 */
@@ -70,13 +70,4 @@ public class UtilDate {
 		return rad.nextInt(x);
 	}
 
-	public String getThree(){
-		return getNumber(1000)+"";
-	}
-
-	public Double getLength(){
-		return getNumber(100)*2.34;
-	}
-
-	
 }
