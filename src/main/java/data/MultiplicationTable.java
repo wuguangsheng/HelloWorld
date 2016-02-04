@@ -11,7 +11,12 @@ public class MultiplicationTable {
         System.out.println("The " + n + " times table");
         while (counter < 13){
             System.out.print(counter + "x" + n);
-            System.out.println("=" + counter * n);
+            System.out.print("=" + counter * n);
+            if(counter==4||counter==8||counter==12){
+                System.out.println();
+            }else {
+                System.out.print("\t");
+            }
             counter = counter + 1;
         }
 
