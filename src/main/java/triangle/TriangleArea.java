@@ -1,5 +1,7 @@
 package triangle;
 
+import tool.KeyboardInput;
+
 /**
  * Program to input the lengths of the sides of a triangle
  * and output the area and perimeter of the triangle,
@@ -10,15 +12,12 @@ public class TriangleArea {
     public void triangleArea(){
         // Obtain data from the user.
         KeyboardInput in = new KeyboardInput();
-        System.out.print("Side1: ");
+        System.out.println("Input side1:");
         double side1 = in.readDouble();
-        System.out.println(side1);
-        System.out.print("Side2: ");
+        System.out.println("input side2:");
         double side2 = in.readDouble();
-        System.out.println(side2);
-        System.out.print("Side3: ");
+        System.out.println("input side3:");
         double side3 = in.readDouble();
-        System.out.println(side3);
         // Now test to see if the input describes an invalid
         // triangle by seeing if the sum of the lengths of
         // any tow sides is less than the length of the third.

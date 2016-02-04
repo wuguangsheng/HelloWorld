@@ -4,6 +4,7 @@ import data.UtilDate;
 import person.PersonDate;
 import person.PersonDescribe;
 import rectangle.DisplayRectangle;
+import tool.KeyboardInput;
 import triangle.TriangleArea;
 
 /**
@@ -29,10 +30,13 @@ public class Option {
        kathy.speak("订单批号：\t" + now.getDate());
 
        /**
-        * mad multiplication table
+        * Input times from keyboard then mad multiplication table
         */
        MultiplicationTable ob = new MultiplicationTable();
-       ob.input(now.getNumber(10));
+       KeyboardInput input = new KeyboardInput();
+       System.out.println("Input time:");
+       final int time = input.readInteger();
+       ob.anyNumber(time);
 
        /**
         * person information
@@ -51,12 +55,17 @@ public class Option {
         * display rectangle
         */
        DisplayRectangle display = new DisplayRectangle();
-       display.displayRectangle(5, 10);
+       System.out.println("Input height:");
+       final int height = input.readInteger();
+       System.out.println("Input width:");
+       final int width = input.readInteger();
+       display.displayRectangle(height, width);
 
        /**
         * display celsius fahrenheit comparison table
         */
-       CelsiusFahrenheitComparisonTable by = new CelsiusFahrenheitComparisonTable();
+       CelsiusFahrenheitComparisonTable by =
+           new CelsiusFahrenheitComparisonTable();
        by.displayComparisonTable();
    }
 }
