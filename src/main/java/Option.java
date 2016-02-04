@@ -50,6 +50,6 @@ public class Option {
         * display rectangle
         */
        DisplayRectangle display = new DisplayRectangle();
-       display.displayRectangle(10,20);
+       display.displayRectangle(5,10);
    }
 }
