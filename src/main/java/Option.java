@@ -1,3 +1,4 @@
+import data.CelsiusFahrenheitComparisonTable;
 import data.MultiplicationTable;
 import data.UtilDate;
 import person.PersonDate;
@@ -50,6 +51,12 @@ public class Option {
         * display rectangle
         */
        DisplayRectangle display = new DisplayRectangle();
-       display.displayRectangle(5,10);
+       display.displayRectangle(5, 10);
+
+       /**
+        * display celsius fahrenheit comparison table
+        */
+       CelsiusFahrenheitComparisonTable by = new CelsiusFahrenheitComparisonTable();
+       by.displayComparisonTable();
    }
 }
