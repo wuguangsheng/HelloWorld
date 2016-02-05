@@ -14,7 +14,7 @@ import java.awt.event.WindowEvent;
  * @author wuguangsheng
  * @version V1.0 on 16/2/4
  */
-public class DrewFrame extends JFrame{
+public class DrawFrame extends JFrame{
     /**
      * Override of the method to add a <CODE>JPanel</CODE> to
      * the <CODE>DrawFrame</CODE> so that the <CODE>JPanel</CODE>
@@ -35,7 +35,7 @@ public class DrewFrame extends JFrame{
      * Construct a <CODE>DrawFrame</CODE> .
      * @param title
      */
-    public DrewFrame(final String title){
+    public DrawFrame(final String title){
         // Initialize the JFrame ensuring the titlebar is set.
         super(title);
         // Set up the quit button with it's listener.

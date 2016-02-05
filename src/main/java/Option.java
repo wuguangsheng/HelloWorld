@@ -4,6 +4,7 @@ import data.UtilDate;
 import person.PersonDate;
 import person.PersonDescribe;
 import rectangle.DisplayRectangle;
+import rectangle.Drawing;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
@@ -67,5 +68,11 @@ public class Option {
        CelsiusFahrenheitComparisonTable by =
            new CelsiusFahrenheitComparisonTable();
        by.displayComparisonTable();
+
+       /**
+        * Drawing
+        */
+       Drawing drawing = new Drawing();
+       drawing.drawAnything();
    }
 }
