@@ -72,7 +72,7 @@ public class Option {
        /**
         * Drawing
         */
-       Drawing drawing = new Drawing();
+       Drawing drawing = new Drawing(1440,1024);
        drawing.drawAnything();
    }
 }

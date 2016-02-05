@@ -15,11 +15,11 @@ public class DrawPanel extends JPanel{
     /**
      * The width of the panel.
      */
-    private int width = 1440;
+    private int width = 300;
     /**
      * The height of the panel.
      */
-    private int height = 1024;
+    private int height = 300;
     /**
      * Default constructor, user the default size.
      */

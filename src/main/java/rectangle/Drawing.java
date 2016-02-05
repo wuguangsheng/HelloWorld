@@ -18,7 +18,7 @@ public class Drawing extends DrawPanel{
     /**
      * Create a frame and drawing, display them on the screen.
      */
-    public static void drawAnything(){
+    public void drawAnything(){
         // Change the string "Drawing" to change the frame title.
         DrawFrame frame = new DrawFrame("Drawing");
         // Don't forget to edit the names here if you change the
@@ -59,13 +59,17 @@ public class Drawing extends DrawPanel{
         GeneralPath triangle = new GeneralPath();
         for (int i= 0;i < 10; ++i){
             r.setRect(i * 15, i * 15, 100, 50);
+            g2d.setColor(Color.red);
             g2d.draw(r);
+            g2d.setColor(Color.yellow);
+            g2d.fill(r);
             e.setFrame(i * 10, 200 - i * 15, 15 * i, 20 * i);
+            g2d.setColor(Color.blue);
             g2d.draw(e);
-            triangle.moveTo(100,150);
-            triangle.lineTo(200,150);
-            triangle.lineTo(150, 50);
-            triangle.lineTo(100, 150);
+            triangle.moveTo(i*10,i*15);
+            triangle.lineTo(i*20,i*15);
+            triangle.lineTo(i*15, i*5);
+            triangle.lineTo(i*10, i*15);
             triangle.closePath();
             g2d.draw(triangle);
         }

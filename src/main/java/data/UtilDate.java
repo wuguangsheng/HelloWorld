@@ -5,7 +5,7 @@ import java.util.Random;
 import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 
-/* *
+/**
  *类名：data.UtilDate
  *功能：自定义订单类
  *详细：工具类，可以用作获取系统日期、订单编号等

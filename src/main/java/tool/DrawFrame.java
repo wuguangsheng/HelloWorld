@@ -36,7 +36,7 @@ public class DrawFrame extends JFrame{
      * @param title
      */
     public DrawFrame(final String title){
-        // Initialize the JFrame ensuring the titlebar is set.
+        // Initialize the JFrame ensuring the title bar is set.
         super(title);
         // Set up the quit button with it's listener.
         Button quitButton = new Button("Quit");
