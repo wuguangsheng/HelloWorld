@@ -49,6 +49,7 @@ public class Drawing extends DrawPanel{
     /**
      * This method is called to do the actual drawing
      * @param g
+     * g
      */
     public void paint(final Graphics g){
         // Don't edit this line.
@@ -62,7 +63,6 @@ public class Drawing extends DrawPanel{
             g2d.setColor(Color.red);
             g2d.draw(r);
             g2d.setColor(Color.yellow);
-            g2d.fill(r);
             e.setFrame(i * 10, 200 - i * 15, 15 * i, 20 * i);
             g2d.setColor(Color.blue);
             g2d.draw(e);

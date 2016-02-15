@@ -5,6 +5,7 @@ import person.PersonDate;
 import person.PersonDescribe;
 import rectangle.DisplayRectangle;
 import rectangle.Drawing;
+import rectangle.DrawingSpiral;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
@@ -74,5 +75,11 @@ public class Option {
         */
        Drawing drawing = new Drawing(1440,1024);
        drawing.drawAnything();
+
+       /**
+        * Drawing a spiral
+        */
+       DrawingSpiral draw = new DrawingSpiral(1440,1024);
+       draw.drawingSpiral();
    }
 }
