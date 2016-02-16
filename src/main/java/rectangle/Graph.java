@@ -50,12 +50,28 @@ public class Graph extends DrawPanel{
             }
         }
     }
+
+    /**
+     * Draw a cross where a point is plotted
+     * @param g2d
+     * @param x
+     * @param y
+     */
     void plotCross(final Graphics2D g2d, final int x, final int y){
         Line2D line = new Line2D.Double(x-5,y-5,x+5,y+5);
         g2d.draw(line);
         line.setLine(x+5,y-5,x-5,y+5);
         g2d.draw(line);
     }
+
+    /**
+     * The method is plotted an line for point to point
+     * @param g2d graph2D
+     * @param x x axis
+     * @param y y axis
+     * @param oldx the first point x axis
+     * @param oldy the first point y axis
+     */
     void plotPoint(final Graphics2D g2d, final int x, final int y,
                    final int oldx, final int oldy){
         int posx = 4 * x + 50;
@@ -66,6 +82,12 @@ public class Graph extends DrawPanel{
         Line2D line = new Line2D.Double(posoldx,posoldy,posx,posy);
         g2d.draw(line);
     }
+
+    /**
+     * The method is the set of points to display,the points are given
+     * in the coordinate system of the graph.
+     * @param g2d
+     */
     void points(final Graphics2D g2d){
         plotPoint(g2d,10,10,0,0);
         plotPoint(g2d,20,35,10,10);
@@ -77,6 +99,11 @@ public class Graph extends DrawPanel{
         plotPoint(g2d,80,30,70,40);
         plotPoint(g2d,90,60,80,30);
     }
+
+    /**
+     * Draw a graph
+     * @param g
+     */
     public void paint(final Graphics g){
         Graphics2D g2d = (Graphics2D)g;
         drawAxis(g2d,8,10,40,50,350,450,350);
