@@ -4,6 +4,7 @@ import tool.DrawFrame;
 import tool.DrawPanel;
 
 import java.awt.*;
+import java.awt.geom.Line2D;
 import java.awt.geom.Rectangle2D;
 
 /**
@@ -27,16 +28,22 @@ public class DrawingSpiral extends DrawPanel{
     }
     public void paint(final Graphics g){
         Graphics2D g2d = (Graphics2D)g;
-        Rectangle2D rectangle = new Rectangle2D.Double(0,0,0,0);
+        Line2D line = new Line2D.Double(0,0,0,0);
         double theta = 0.0;
-        double increment = 2* Math.PI/100.0;
-        for (int n = 0; n < 1500; ++n){
+        double increment = 2* Math.PI/50.0;
+        double xoffset = 150.0;
+        double yoffset = 150.0;
+        double lastx = xoffset;
+        double lasty = yoffset;
+        for (int n = 0; n < 500; ++n){
             theta += increment;
-            double radius = 75.0 * n / 1000;
-            double x = 150 + (radius * Math.cos(theta));
-            double y = 150 + (radius * Math.sin(theta));
-            rectangle.setRect(x,y,1,1);
-            g2d.draw(rectangle);
+            double radius = (xoffset / 2) * n / 300;
+            double x = xoffset + (radius * Math.cos(theta));
+            double y = yoffset + (radius * Math.sin(theta));
+            line.setLine(lastx,lasty,x,y);
+            g2d.draw(line);
+            lastx = x;
+            lasty = y;
         }
     }
 }
