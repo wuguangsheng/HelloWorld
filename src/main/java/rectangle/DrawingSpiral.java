@@ -5,7 +5,6 @@ import tool.DrawPanel;
 
 import java.awt.*;
 import java.awt.geom.Line2D;
-import java.awt.geom.Rectangle2D;
 
 /**
  * The program drawing a spiral

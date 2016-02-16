@@ -88,7 +88,7 @@ public class Option {
        /**
         * Drawing a graph
         */
-       Graph drawingGraph = new Graph(1440,1024);
+       Graph drawingGraph = new Graph();
        drawingGraph.graph();
    }
 }

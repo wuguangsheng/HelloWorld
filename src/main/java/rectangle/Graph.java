@@ -60,7 +60,7 @@ public class Graph extends DrawPanel{
     void plotCross(final Graphics2D g2d, final int x, final int y){
         Line2D line = new Line2D.Double(x-5,y-5,x+5,y+5);
         g2d.draw(line);
-        line.setLine(x+5,y-5,x-5,y+5);
+        line.setLine(x + 5, y - 5, x - 5, y + 5);
         g2d.draw(line);
     }
 
@@ -89,15 +89,19 @@ public class Graph extends DrawPanel{
      * @param g2d
      */
     void points(final Graphics2D g2d){
-        plotPoint(g2d,10,10,0,0);
-        plotPoint(g2d,20,35,10,10);
-        plotPoint(g2d,30,40,20,35);
-        plotPoint(g2d,40,30,30,40);
-        plotPoint(g2d,50,35,40,30);
-        plotPoint(g2d,60,30,50,35);
-        plotPoint(g2d,70,40,60,30);
-        plotPoint(g2d,80,30,70,40);
-        plotPoint(g2d,90,60,80,30);
+        int [][] axis = {
+                {10,10,0,0},
+                {20,35,10,10},
+                {30,40,20,35},
+                {40,30,30,40},
+                {50,35,40,30},
+                {60,30,50,35},
+                {70,40,60,30},
+                {80,30,70,40},
+                {90,60,80,30}};
+        for (int j = 0; j < axis.length; ++j){
+            plotPoint(g2d,axis[j][0],axis[j][1],axis[j][2],axis[j][3]);
+        }
     }
 
     /**
