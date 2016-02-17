@@ -25,8 +25,7 @@ public class UtilDate {
     
     /** 年月日(无下划线) yyyyMMdd */
     public static final String dtShort                 = "yyyyMMdd";
-	
-    
+
     /**
      * 返回系统当前时间(精确到毫秒),作为一个唯一的订单编号
      * @return
