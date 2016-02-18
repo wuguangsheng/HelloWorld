@@ -7,6 +7,7 @@ import rectangle.DisplayRectangle;
 import rectangle.Drawing;
 import rectangle.DrawingSpiral;
 import rectangle.Graph;
+import tool.DrawButton;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
@@ -90,5 +91,8 @@ public class Option {
         */
        Graph drawingGraph = new Graph();
        drawingGraph.graph();
+
+       DrawButton b = new DrawButton();
+       b.button();
    }
 }
