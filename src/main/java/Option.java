@@ -92,6 +92,9 @@ public class Option {
        Graph drawingGraph = new Graph();
        drawingGraph.graph();
 
+       /**
+        * Drawing a button
+        */
        DrawButton b = new DrawButton();
        b.button();
    }

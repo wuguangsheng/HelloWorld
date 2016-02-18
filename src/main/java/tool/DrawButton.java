@@ -34,7 +34,7 @@ public class DrawButton extends JFrame{
             }
         });
     }
-    public static void button(){
+    public void button(){
         DrawButton b = new DrawButton();
         b.setVisible(true);
     }
