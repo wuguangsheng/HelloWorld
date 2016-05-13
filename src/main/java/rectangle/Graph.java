@@ -21,6 +21,7 @@ public class Graph extends DrawPanel{
         frame.centreOnScreen();
         frame.setVisible(true);
     }
+
     public Graph() {}
     public Graph(final int w,final int h){super(w,h);}
 
@@ -28,7 +29,7 @@ public class Graph extends DrawPanel{
      * The method for drawing a axis for x or y
      * @param g2d
      */
-   void drawAxis(final Graphics2D g2d,final int scale, final int scalevalue,
+    void drawAxis(final Graphics2D g2d,final int scale, final int scalevalue,
                   final int step, final int xoffset, final int yoffset, final int x,final int y){
         Line2D line = new Line2D.Double(xoffset,yoffset,x,y);
         g2d.draw(line);

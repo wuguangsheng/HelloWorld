@@ -1,17 +1,16 @@
 import data.CelsiusFahrenheitComparisonTable;
 import data.MultiplicationTable;
+import data.StaticImportDemo;
 import data.UtilDate;
 import person.PersonDate;
 import person.PersonDescribe;
-import rectangle.DisplayRectangle;
-import rectangle.Drawing;
-import rectangle.DrawingSpiral;
-import rectangle.Graph;
+import rectangle.*;
 import tool.DrawButton;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
-import java.awt.*;
+import java.io.IOException;
+
 
 /**
  * The java learning main run class
@@ -20,7 +19,7 @@ import java.awt.*;
  *
  */
 public class Option {
-   public static void main(String[]args){
+   public static void main(final String[]args) throws IOException {
        /**
         * Sade hello world!
         */
@@ -75,6 +74,11 @@ public class Option {
        by.displayComparisonTable();
 
        /**
+        * Static import demo
+        */
+       System.out.println(StaticImportDemo.staticImportDemo(0.24));
+
+       /**
         * Drawing
         */
        Drawing drawing = new Drawing(1440,1024);
@@ -97,5 +101,24 @@ public class Option {
         */
        DrawButton b = new DrawButton();
        b.button();
+
+       /**
+        * Drawing tow color rectangle
+        */
+
+       BoxFun boxFun = new BoxFun();
+       boxFun.boxfun();
+
+       /**
+        * File input
+        */
+/*       FileInput in = new FileInput("data.PointAxis.dat");
+       char c = in.readCharacter();
+       while (in.eof()){
+           System.out.print(c);
+           c = in.readCharacter();
+       }
+       in.close();
+*/
    }
 }
