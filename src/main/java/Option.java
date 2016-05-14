@@ -3,14 +3,14 @@ import data.MultiplicationTable;
 import data.UtilDate;
 import person.PersonDate;
 import person.PersonDescribe;
-import rectangle.DisplayRectangle;
-import rectangle.Drawing;
-import rectangle.DrawingSpiral;
-import rectangle.Graph;
+import rectangle.*;
 import tool.DrawButton;
+import tool.DrawFrame;
+import tool.FileInput;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
+import javax.swing.*;
 import java.awt.*;
 
 /**
@@ -20,7 +20,7 @@ import java.awt.*;
  *
  */
 public class Option {
-   public static void main(String[]args){
+   public static void main(final String[]args){
        /**
         * Sade hello world!
         */
@@ -97,5 +97,23 @@ public class Option {
         */
        DrawButton b = new DrawButton();
        b.button();
+
+       /**
+        * Drawing Color rectangle
+        */
+       JFrame f = new JFrame("Even Fun");
+       ColorRectangle colorRectangle = new ColorRectangle(80,90,100,20,f,Color.YELLOW);
+       colorRectangle.paint();
+
+       /**
+        * File input
+        */
+/*       FileInput in = new FileInput("data.PointAxis.dat");
+       char c = in.readCharacter();
+       while (in.eof()){
+           System.out.print(c);
+           c = in.readCharacter();
+       }
+       in.close();*/
    }
 }
