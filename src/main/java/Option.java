@@ -8,7 +8,7 @@ import tool.DrawButton;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
-import java.io.IOException;
+import java.awt.*;
 
 /**
  * The java learning main run class
@@ -17,7 +17,7 @@ import java.io.IOException;
  *
  */
 public class Option {
-   public static void main(final String[]args) throws IOException {
+   public static void main(final String[]args){
        /**
         * Sade hello world!
         */
@@ -97,7 +97,8 @@ public class Option {
        /**
         * Drawing Color rectangle
         */
-       BoxFun.boxFun();
+       ColorRectangle rectangle = new ColorRectangle(50,90,100,20, Color.CYAN);
+       rectangle.colorRectangle(rectangle);
        /**
         * File input
         */

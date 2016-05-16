@@ -16,12 +16,23 @@ public class ColorRectangle extends DrawPanel{
     private DrawFrame frame = new DrawFrame("Box Fun");
     private Color color;
 
-    public void colorRectangle(){
-        Graphics gd = frame.getGraphics();
-        paint(gd);
+    public void colorRectangle(ColorRectangle c){
+        frame.add(c);
+        frame.pack();
+        frame.centreOnScreen();
+        frame.setVisible(true);
     }
 
-    private ColorRectangle(){
+    public ColorRectangle(){
+    }
+
+    public ColorRectangle(int x,int y,int w,int h,Color c){
+        super(200,200);
+        setRectangle_x(x);
+        setRectangle_y(y);
+        setRectangle_width(w);
+        setRectangle_height(h);
+        setColor(c);
     }
 
     public void paint(final Graphics g){
@@ -64,17 +75,5 @@ public class ColorRectangle extends DrawPanel{
     }
     public DrawFrame getFrame(){
         return frame;
-    }
-
-    public ColorRectangle(int x,int y,int w,int h,Color c){
-        setRectangle_x(x);
-        setRectangle_y(y);
-        setRectangle_width(w);
-        setRectangle_height(h);
-        setColor(c);
-
-        frame.setSize(200,200);
-        frame.centreOnScreen();
-        frame.setVisible(true);
     }
 }
