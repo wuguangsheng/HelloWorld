@@ -5,13 +5,10 @@ import person.PersonDate;
 import person.PersonDescribe;
 import rectangle.*;
 import tool.DrawButton;
-import tool.DrawFrame;
-import tool.FileInput;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
-import javax.swing.*;
-import java.awt.*;
+import java.io.IOException;
 
 /**
  * The java learning main run class
@@ -20,7 +17,7 @@ import java.awt.*;
  *
  */
 public class Option {
-   public static void main(final String[]args){
+   public static void main(final String[]args) throws IOException {
        /**
         * Sade hello world!
         */
@@ -91,7 +88,6 @@ public class Option {
         */
        Graph drawingGraph = new Graph();
        drawingGraph.graph();
-
        /**
         * Drawing a button
         */
@@ -101,10 +97,7 @@ public class Option {
        /**
         * Drawing Color rectangle
         */
-       JFrame f = new JFrame("Even Fun");
-       ColorRectangle colorRectangle = new ColorRectangle(80,90,100,20,f,Color.YELLOW);
-       colorRectangle.paint();
-
+       BoxFun.boxFun();
        /**
         * File input
         */
