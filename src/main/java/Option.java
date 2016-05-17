@@ -1,6 +1,5 @@
 import data.CelsiusFahrenheitComparisonTable;
 import data.MultiplicationTable;
-import data.StaticImportDemo;
 import data.UtilDate;
 import person.PersonDate;
 import person.PersonDescribe;
@@ -9,8 +8,7 @@ import tool.DrawButton;
 import tool.KeyboardInput;
 import triangle.TriangleArea;
 
-import java.io.IOException;
-
+import java.awt.*;
 
 /**
  * The java learning main run class
@@ -19,7 +17,7 @@ import java.io.IOException;
  *
  */
 public class Option {
-   public static void main(final String[]args) throws IOException {
+   public static void main(final String[]args){
        /**
         * Sade hello world!
         */
@@ -74,11 +72,6 @@ public class Option {
        by.displayComparisonTable();
 
        /**
-        * Static import demo
-        */
-       System.out.println(StaticImportDemo.staticImportDemo(0.24));
-
-       /**
         * Drawing
         */
        Drawing drawing = new Drawing(1440,1024);
@@ -95,7 +88,6 @@ public class Option {
         */
        Graph drawingGraph = new Graph();
        drawingGraph.graph();
-
        /**
         * Drawing a button
         */
@@ -103,12 +95,10 @@ public class Option {
        b.button();
 
        /**
-        * Drawing tow color rectangle
+        * Drawing Color rectangle
         */
-
-       BoxFun boxFun = new BoxFun();
-       boxFun.boxfun();
-
+       ColorRectangle rectangle = new ColorRectangle(50,90,100,20, Color.CYAN);
+       rectangle.colorRectangle(rectangle);
        /**
         * File input
         */
@@ -118,7 +108,6 @@ public class Option {
            System.out.print(c);
            c = in.readCharacter();
        }
-       in.close();
-*/
+       in.close();*/
    }
 }
