@@ -74,17 +74,5 @@ public class Drawing extends DrawPanel{
             g2d.draw(triangle);
         }
     }
-    /*
-    private void DrawTriangle(final Graphics2D g){
-        Graphics2D f = (Graphics2D)g;
-        GeneralPath triangle = new GeneralPath();
-        triangle.moveTo(100,100);
-        triangle.lineTo(200,150);
-        triangle.lineTo(150,50);
-        triangle.lineTo(100,150);
-        triangle.closePath();
-        f.draw(triangle);
-    }
-     */
     // other method can be added here
 }

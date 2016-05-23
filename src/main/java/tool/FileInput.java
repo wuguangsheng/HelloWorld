@@ -202,6 +202,6 @@ public class FileInput {
     private void error(String msg){
         System.err.println(msg);
         System.err.println("Unable to continue executing program.");
-//        System.exit(0);
+        System.exit(0);
     }
 }
